@@ -1,0 +1,53 @@
+mat-card img{
+  height: 200px; 
+  object-fit: cover;
+  }
+  .filter-input{
+    margin: 10px;
+    font-size: medium;
+  }
+  
+  .actions{
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  .flex-items{
+    margin: 20px;
+  }
+  
+  .content {
+    padding: 16px;
+  }
+  
+  
+  .category-page-container{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  @media(min-width: 769px){
+  
+    .category-page-container{
+        display: flex;
+        flex-direction: row;
+    }
+  }
+  .price-section {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 60px;
+  }
+  
+  .price-margin {
+    margin: 8px;
+    width:80px;
+  }
+ 
+  .content {
+    padding: 16px;
+  }
+  

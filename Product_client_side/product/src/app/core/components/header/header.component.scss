@@ -1,0 +1,71 @@
+mat-toolbar {
+  background-color: rgb(247, 242, 242);
+  //color: white;
+  height: fit-content;
+  justify-content: space-around;
+ margin-bottom: 2px;
+
+  button {
+    width: 78px;
+    float: right;
+    border-spacing: 15px;
+    margin-right: 5px;
+    min-width: 50px;
+  }
+
+}
+.namevalue{
+  float: left;
+  height: 25px; width: 25px;
+  margin-left: 80%;
+}
+.profileicon{
+  float: left;
+  height: 25px; width: 25px;
+  margin-left: 99%;
+  margin-bottom: -30px;
+}
+.active-link{
+  background-color: palevioletred;
+  text-decoration: underline;
+}
+.carticon{
+  height: 25px; width: 25px; float: left;
+  margin-bottom: -30px;
+  margin-left: 95%;
+}
+mat-toolbar{
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1000;
+}
+// .carticon{
+//   float: left;
+//   height: 25px; width: 25px;
+//   margin-left: 65%;
+// }
+
+mat-sidenav-content {
+    z-index: 0;
+  background-color: white;
+  justify-content: center;
+}
+.aboutus{
+  text-decoration: underline;
+}
+@media(max-width:760px) {
+  .namevalue{
+  display: none;
+  }
+  .carticon{
+    display: none;
+  }
+  .profileicon{
+    float: left;
+    height: 25px; width: 25px;
+    margin-left: 90%;
+    margin-bottom: -10px;
+  }
+  
+}

@@ -1,0 +1,48 @@
+.cont {
+  
+    background-image: url("../../../../assets/store-home-page.jpg");
+    background-position: center;
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+  }
+  
+  .container {
+    align-items: center;
+    text-align: center;
+    width: fit-content;
+    border-radius: 8px;
+    padding: 2%;
+    background: rgba($color: #ffffff, $alpha: 1);
+    div {
+      font-size: 1.2rem;
+    }
+  
+    form {
+      min-width: 260px;
+      max-width: 500px;
+      width: 100%;
+      gap: 5px;
+      .submit {
+        margin-top: 5px;
+      }
+    }
+    a {
+      color: purple;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    button {
+      align-self: center;
+      width: fit-content;
+    }
+  }
+  

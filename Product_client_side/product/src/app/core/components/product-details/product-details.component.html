@@ -1,0 +1,46 @@
+<h2></h2>
+
+  <div class="row" *ngIf="productDetail">
+    <div class="col">
+        <div class="preview">
+          <img src="{{productDetail.imgUrl}}" id="imagebox" />
+        </div>
+    </div>
+    <div class="col">
+      <div class="content">
+        <p class="brand" style="font-size: 40px;">
+          {{ productDetail.name
+         }}
+        </p>
+        <br />
+        
+
+        <p>
+          <span style="font-size: 15px;color: grey;">Range starts from </span>
+          <span style="font-size: 15px">{{ "Rs "+productDetail.price }}</span>
+        </p>
+
+        <p>
+          <span style="font-size: 15px;color:grey;">Description : </span>
+          <span style="font-size: 15px">{{ productDetail.description }}</span>
+        </p>
+
+        <p>
+          <span style="font-size: 15px;color:grey;">Features: </span>
+          <span style="font-size: 15px">{{ productDetail.features }}</span>
+        </p>
+        <p>
+          <span style="font-size: 15px;color:grey;">Reviews : </span>
+          <span style="font-size: 15px">{{ productDetail.reviews}}</span>
+        </p>
+        <br>
+
+        <button mat-raised-button color="primary" type="button" (click)="addToCart()">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+  </div>
+<br />
+<br />
+

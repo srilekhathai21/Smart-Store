@@ -1,0 +1,21 @@
+<mat-toolbar fxLayout="column" fxLayoutAlign="center">
+
+  <mat-toolbar-row fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center">
+      <a mat-button (click)="redirect()">Home</a>
+      <a mat-button routerLink="aboutus">About Us</a>
+      <a mat-button routerLink="contactUs">Contact</a>
+      <a mat-button (click)="addFeedback()">Feedback</a>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row fxLayout="row" fxLayoutGap="12px" fxLayoutAlign="center">
+      <a href="https://www.fb.com" target="_blank"><img src="../../../../assets/footer-images/facebook.png" class="icon"alt=""></a>
+      <a href="https://www.instagram.com" target="_blank"><img src="../../../../assets/footer-images/instagram.png" class="icon" alt=""></a>
+      <a href="https://www.twitter.com" target="_blank"><img src="../../../../assets/footer-images/twitter.png" class="icon" alt=""></a>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row fxLayout="row" fxLayoutAlign="center" [style.fontSize.px]=12>
+      <p>&copy; Copyright 2023 All rights reserved</p>
+  </mat-toolbar-row>
+
+</mat-toolbar>
+

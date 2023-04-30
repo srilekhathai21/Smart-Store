@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+.container {
+  margin: 10px 10px;
+  justify-content: space-around;
+  align-items: center;
+
+  .carousel-container {
+    width:60vw;
+    max-width: 700px;
+    // width: fit-content;
+    // height: 400px;
+    // height: fit-content;
+    height: 400px;
+    // min-width: 300px;
+    // max-height: min-content;
+    // min-height: 400px;
+  }
+  .text-cont{
+    text-align: center;
+    width:40%;
+    .text {
+      font-size:37.94px;
+      margin: 50px 0;
+      font-family:Roboto, "Helvetica Neue", sans-serif;
+    }
+    .sub-text {
+      font-size: 17px;
+      margin: 0 0 50px 0;
+      line-height: normal;
+      font-family:Roboto, "Helvetica Neue", sans-serif;
+    }
+  }
+}
+
+@media(max-width:600px) {
+  .container{
+    .sel-container {
+      width:80vw;
+      // max-width: 600px;
+      height: 300px;
+    }
+
+    .text-cont {
+      width: 90%;
+    }
+  }
+}
+.topimage {
+    background-image: url("../../../../assets/store-image.jpg");
+    min-height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.title{
+    font-family: cursive;
+    color: black;
+    font-weight: bolder;
+    font-size: xxx-large;
+    margin-top: 20%;
+    margin-left: 56%;
+    display: inline-block;
+}

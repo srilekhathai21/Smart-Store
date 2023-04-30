@@ -1,0 +1,15 @@
+const express = require('express');
+const router = express.Router();
+const authController = require('../controller/auth.controller');
+const productController = require('../controller/product.controller');
+const verifyToken =require('../middleware/auth/jwt.token');
+router.post('/login', authController.customerLogin);
+router.post('/signup', authController.customerSignup);
+router.get('/getProducts',verifyToken,productController.getProductList);
+router.post('/addProduct',verifyToken,productController.addProduct);
+router.post('/getProductsBasedOnFilter',verifyToken,productController.getProductsBasedOnFilter);
+router.get('/getProductById',verifyToken,productController.getProductById);
+router.post('/addProductsToCart',productController.addProductsToCart);
+router.get('/getProductsFromcart',productController.getProductsFromcart);
+router.delete('/deleteProductFromCart',productController.deleteProductFromCart);
+module.exports = router;

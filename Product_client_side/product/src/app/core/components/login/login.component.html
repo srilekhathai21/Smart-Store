@@ -1,0 +1,72 @@
+<div class="mat-elevation-z0 cont" fxLayout="column">
+    <div class="container" fxLayout="column">
+      <div>Login to Order from Smart Store</div>
+      <br /><br />
+      <form
+        fxLayout="column"
+        [formGroup]="loginForm"
+        (ngSubmit)="sendDetails(loginForm.value)"
+      >
+        <mat-form-field appearance="outline">
+          <mat-label>Enter your email</mat-label>
+          <input matInput formControlName="email" />
+          <mat-error
+            *ngIf="
+              loginForm.get('email').touched &&
+              loginForm.get('email').hasError('required')
+            "
+          >
+            {{ titleAlert }}
+          </mat-error>
+          <mat-error
+            *ngIf="
+              loginForm.get('email').touched &&
+              loginForm.get('email').hasError('email')
+            "
+            >Enter a valid email</mat-error
+          >
+        </mat-form-field>
+    
+        <mat-form-field appearance="outline">
+          <mat-label>Enter your password</mat-label>
+          <input
+            matInput
+            [type]="hide ? 'password' : 'text'"
+            formControlName="password"
+          />
+          <mat-error
+            *ngIf="
+              loginForm.get('password').touched &&
+              loginForm.get('password').hasError('required')
+            "
+          >
+            {{ titleAlert }}
+          </mat-error>
+        </mat-form-field>
+    
+        <button
+          class="submit"
+          mat-raised-button
+          color="primary"
+          type="submit"
+          [disabled]="!loginForm.valid"
+        >
+          Submit
+        </button>
+      </form>
+        
+        <br /><br />
+        
+    
+        <p [style.fontSize.px]="13">
+          Not registered yet? Click here to
+          <a routerLinkActive="active" (click)="signup()">register</a>
+        </p>
+    
+        <br /><br />
+    
+
+      
+    </div>
+  </div>
+  
